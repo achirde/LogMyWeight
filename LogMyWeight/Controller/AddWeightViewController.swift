@@ -18,6 +18,8 @@ class AddWeightViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     var weightLog = WeightLog()
     var lastWeight : Double?
     
+    let defaults = UserDefaults.standard
+    
     @IBOutlet weak var weight: UIPickerView!
     @IBOutlet weak var dateAdded: UIDatePicker!
     
@@ -28,7 +30,9 @@ class AddWeightViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         weight.dataSource = self
         
         
-        weightLog.weight = lastWeight! // Previously Captured Weight
+        if lastWeight != nil {
+            weightLog.weight = lastWeight!
+        }// Previously Captured Weight
         
         if let i = weightInt.index(of: Int(weightLog.weight)){
             weight.selectRow(i, inComponent: 0, animated: true)

@@ -12,6 +12,7 @@ class WeightLogCell: UITableViewCell {
 
     @IBOutlet weak var weight: UILabel!
     @IBOutlet weak var dateAdded: UILabel!
+    @IBOutlet weak var unit: UILabel!
     
     
     override func awakeFromNib() {

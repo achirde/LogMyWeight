@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B7EA795D68547D64CA0F8CB /* Pods_LogMyWeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395EFE90CF72347FCCCAB8E8 /* Pods_LogMyWeight.framework */; };
+		619E712721645C12003A1707 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619E712621645C12003A1707 /* SettingsTableViewController.swift */; };
 		61C19EE8213175E900A23F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C19EE7213175E900A23F7A /* AppDelegate.swift */; };
 		61C19EED213175E900A23F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C19EEB213175E900A23F7A /* Main.storyboard */; };
 		61C19EEF213175F300A23F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C19EEE213175F300A23F7A /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		395EFE90CF72347FCCCAB8E8 /* Pods_LogMyWeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogMyWeight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		619E712621645C12003A1707 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		61C19EE4213175E900A23F7A /* LogMyWeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogMyWeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C19EE7213175E900A23F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61C19EEC213175E900A23F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				61C19EFB2133823B00A23F7A /* LogTableViewController.swift */,
 				61C19F10213410B600A23F7A /* AddWeightViewController.swift */,
 				61C19F0821338AF400A23F7A /* WeightLogCell.swift */,
+				619E712621645C12003A1707 /* SettingsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				TargetAttributes = {
 					61C19EE3213175E900A23F7A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -241,6 +245,7 @@
 			files = (
 				61C19EFC2133823B00A23F7A /* LogTableViewController.swift in Sources */,
 				61C19F03213385F500A23F7A /* WeightLog.swift in Sources */,
+				619E712721645C12003A1707 /* SettingsTableViewController.swift in Sources */,
 				61C19F0A21338AF400A23F7A /* WeightLogCell.swift in Sources */,
 				61C19EE8213175E900A23F7A /* AppDelegate.swift in Sources */,
 				61C19F11213410B600A23F7A /* AddWeightViewController.swift in Sources */,
@@ -397,7 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Achirangshu.LogMyWeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -416,7 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Achirangshu.LogMyWeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

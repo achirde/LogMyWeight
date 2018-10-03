@@ -32,17 +32,26 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHy-ei-mFa" userLabel="unit">
+                        <rect key="frame" x="124" y="23.5" width="12.5" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="MHy-ei-mFa" firstAttribute="leading" secondItem="jUY-jj-9ub" secondAttribute="trailing" constant="8" id="288-MW-RSe"/>
                     <constraint firstItem="1v9-Wy-phq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="O2Q-L7-99g"/>
                     <constraint firstItem="1v9-Wy-phq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QoP-t9-tqh"/>
                     <constraint firstItem="jUY-jj-9ub" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TKG-0v-BhY"/>
+                    <constraint firstItem="MHy-ei-mFa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xeb-8k-A5a"/>
                     <constraint firstItem="jUY-jj-9ub" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nLA-y4-zBn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="dateAdded" destination="1v9-Wy-phq" id="Cx2-d3-8ls"/>
+                <outlet property="unit" destination="MHy-ei-mFa" id="S55-3s-tN4"/>
                 <outlet property="weight" destination="jUY-jj-9ub" id="C3q-qH-lhE"/>
             </connections>
             <point key="canvasLocation" x="34" y="65.5"/>
