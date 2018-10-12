@@ -8,6 +8,8 @@
 
 import UIKit
 import RealmSwift
+import Firebase
+import GoogleSignIn
 
 class LogTableViewController: UITableViewController {
     
@@ -25,6 +27,10 @@ class LogTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         print(realm.configuration.fileURL)
+        
+        if defaults.string(forKey: "Unit") == nil{
+            defaults.set("lb", forKey: "Unit")
+        }
         
         tableView.rowHeight = 70
     }
@@ -54,8 +60,15 @@ class LogTableViewController: UITableViewController {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         if let weight = weightArray?[indexPath.row] {
-            cell.weight?.text = String((weight.weight).roundToDecimal(1))  // * 0.453592
             cell.unit?.text = defaults.string(forKey: "Unit")
+            
+            if defaults.string(forKey: "Unit") == "kg" {
+               cell.weight?.text = String((weight.weight * 0.453592 ).roundToDecimal(1) )
+            }else{
+               cell.weight?.text = String((weight.weight).roundToDecimal(1))
+            }
+            
+
             cell.dateAdded.text = formatter.string(from: (weight.dateAdded))
         }
         
@@ -94,7 +107,7 @@ class LogTableViewController: UITableViewController {
             let destinationVC = segue.destination as! AddWeightViewController
             if weightArray?.count != 0 {
                 if let lastWeight = weightArray?[0]{
-                    destinationVC.lastWeight = lastWeight.weight
+                   destinationVC.lastWeight = lastWeight.weight
                 }
             }
         }
@@ -103,6 +116,20 @@ class LogTableViewController: UITableViewController {
     func loadData(){
         weightArray = realm.objects(WeightLog.self).sorted(byKeyPath: "dateAdded", ascending: false)
     }
+    
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+        do{
+            try Auth.auth().signOut()
+            print("Signed Out")
+        }catch{
+            print("Error while sign out,\(error)")
+        }
+        
+        GIDSignIn.sharedInstance()?.disconnect()
+        GIDSignIn.sharedInstance()?.signOut()
+        
+    }
+    
     
 }
 

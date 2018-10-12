@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsTableViewController: UITableViewController {
 
     let defaults = UserDefaults.standard
     
+    @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var unitSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if defaults.string(forKey: "Unit") == "lb"{
+            unitSwitch.isOn = true
+        }else{
+            unitSwitch.isOn = false
+        }
+        
+        let user = Auth.auth().currentUser?.displayName
+        userName.text = user
 
     }
 
@@ -28,7 +38,7 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 3
     }
 
     @IBAction func SaveButtonPressed(_ sender: Any) {
@@ -38,8 +48,7 @@ class SettingsTableViewController: UITableViewController {
         }else{
            defaults.set("kg", forKey: "Unit")
         }
-
-    navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
     
 

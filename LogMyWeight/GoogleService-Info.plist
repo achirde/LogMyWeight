@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>599306670530-mgpbbjv9gpevs0o0nf1pspv69ab60qav.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.599306670530-mgpbbjv9gpevs0o0nf1pspv69ab60qav</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCISlypbpIjf4KEeUqt9l2kEulITberRM8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>599306670530</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Achirangshu.LogMyWeight</string>
+	<key>PROJECT_ID</key>
+	<string>weightlogger-4de25</string>
+	<key>STORAGE_BUCKET</key>
+	<string>weightlogger-4de25.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:599306670530:ios:22a9040fb110d1d9</string>
+	<key>DATABASE_URL</key>
+	<string>https://weightlogger-4de25.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,8 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="233.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUY-jj-9ub" userLabel="weight">
-                        <rect key="frame" x="16" y="10" width="100.5" height="47"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="233.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUY-jj-9ub" userLabel="weight">
+                        <rect key="frame" x="15.5" y="10" width="100.5" height="47"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,19 +32,19 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHy-ei-mFa" userLabel="unit">
-                        <rect key="frame" x="124" y="23.5" width="12.5" height="20"/>
+                        <rect key="frame" x="126" y="23.5" width="12.5" height="20"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="MHy-ei-mFa" firstAttribute="leading" secondItem="jUY-jj-9ub" secondAttribute="trailing" constant="8" id="288-MW-RSe"/>
                     <constraint firstItem="1v9-Wy-phq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="O2Q-L7-99g"/>
                     <constraint firstItem="1v9-Wy-phq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QoP-t9-tqh"/>
+                    <constraint firstItem="MHy-ei-mFa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="110" id="SFj-E1-ohR"/>
                     <constraint firstItem="jUY-jj-9ub" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TKG-0v-BhY"/>
                     <constraint firstItem="MHy-ei-mFa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xeb-8k-A5a"/>
-                    <constraint firstItem="jUY-jj-9ub" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nLA-y4-zBn"/>
+                    <constraint firstItem="jUY-jj-9ub" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="100" id="nLA-y4-zBn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
